@@ -18,7 +18,7 @@
   (:gen-class))
 
 (defn -main
-  []
+  [& args]
   (postal/send-message {:host (:host env)
                  :user (:username env)
                  :pass (:password env)
